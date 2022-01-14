@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: column;
+    max-width: 500px;
+
+    &.alert {
+      background-color: rgb(255, 255, 103);
+    }
+
+    .texts {
+      margin-top: 1rem;
+      h4 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+    }
+    
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+  }
+}
